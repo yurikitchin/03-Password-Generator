@@ -1,0 +1,34 @@
+When the user clicks the generate button,
+	---Event listener 'click' on generate button
+
+=> a prompt window is generated that asks for length of password 8-126 characters, when length is entered, 
+	---Input variable 8-126
+	---ok button, changes variable to number entered var Length
+	---Opens next window
+
+=> confirm window is generated Lowercase to be used Yes or no, 
+	--- var lowercase = charcode values
+	---input yes or no
+	---no, does not introduce variable into the generator function, or makes variable ""
+	---yes, add's var lowercase to 
+
+=> confirm window is generated Uppercase to be used Yes or no, 
+	--- var lowercase = charcode values
+	---input yes or no
+	---no, does not introduce variable into the generator function, or makes variable ""
+	---yes, add's var lowercase to 
+
+=> confirm window is generated numbers to be used Yes or no, 
+	--- var lowercase = charcode values
+	---input yes or no
+	---no, does not introduce variable into the generator function, or makes variable ""
+	---yes, add's var lowercase to 
+
+=> confirm window is generated Symobls to be uses Yes or no
+	--- var lowercase = charcode values
+	---input yes or no
+	---no, does not introduce variable into the generator function, or makes variable ""
+	---yes, add's var lowercase to 
+
+=> from data given random password is generated
+=> password is shown in password box
