@@ -37,6 +37,45 @@ function defineParameters (){
   }
 };
 
+//add function to generate password
+function generatePassword() {
+  //user selectes length, number is parsed to an integer
+ userSelectLength = prompt("How many characters would you like, please select a number between 8-126")
+    userSelectLength = parseInt(userSelectLength, 10);
+    console.log(userSelectLength)
+    if (userSelectLength < 8) {
+      alert("you must select a number between  8 and 126")
+      userSelectLength = prompt("How many characters would you like, please select a number between 8-126")
+    }
+    if (userSelectLength > 126){
+      alert("you must select a number between  8 and 126")
+      userSelectLength = prompt("How many characters would you like, please select a number between 8-126")
+    }
+
+    if (userSelectLength === NaN){
+      alert("you must select a number between  8 and 126")
+      userSelectLength = prompt("How many characters would you like, please select a number between 8-126")
+    }
+  defineParameters()
+
+  if (userConfirmsymbol === false && userConfirmNumber === false && userConfirmUpper === false && userConfirmLower === false) {
+    alert("you must select at least one parameter")
+    defineParameters();}
+
+//only true boolean answers are concated onto the generateArray
+ 
+  var newPassword = '';
+  for (let index = 0; index < userSelectLength; index++) {
+    debugger
+    const characters = Math.floor(Math.random() * generateArray.length)
+    newPassword += generateArray.charAt(characters)
+  }
+  
+ //new password is made
+ return newPassword
+}
+
+
 
 // Write password to the #password input
 function writePassword() {
